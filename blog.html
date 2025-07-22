@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/124b51a19b.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"> -->
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-regular fa-circle-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2021</h1>
+    </section>
+    <!-- --------------blog page content------ -->
+     <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.png" >
+                <h2>Our Certificate & Online Programs For 2024</h2>
+                <p>Techno University offers a range of certificates and online programs designed to enhance skills and knowledge for today’s dynamic job market.</p>
+                <br>
+            <p>Our online programs cater to diverse interests, providing flexible learning options that allow students to balance their studies with personal and professional commitments, ensuring accessibility and convenience for all learners.</p>
+            <br>
+            <p>Certificates from Techno University are recognized for their quality and relevance, empowering students to gain specialized skills in fields like technology, business, and design. These credentials enhance career prospects and demonstrate a commitment to continuous learning.</p>
+            <br>
+            <p>With expert instructors and comprehensive course materials, Techno University’s online programs foster an engaging learning experience. Students can connect with peers, access valuable resources, and receive personalized support, ensuring they are well-prepared to excel in their chosen fields.</p>
+<div class="comment-box">
+    <h3>Leave a comment</h3>
+    <form class="comment-form">
+        <input type="text" placeholder="Enter Name">
+        <input type="email" placeholder="Enter Email">
+        <textarea rows="5" placeholder="Your Comment"></textarea>
+        <button type="submit"  class="hero-btn red-btn">POST COMMENT</button>
+    </form>
+</div>
+
+
+        </div>
+            <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>27</span>
+            </div>
+            <div>
+                <span>Autocad</span>
+                <span>7</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>55</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>17</span>
+            </div>
+        </div>
+        </div>
+     </section>
+    
+<!-- ------------footer------------ -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Techno University management is dedicated to fostering an inclusive and innovative academic environment. Committed to excellence, they prioritize student success through robust support services, cutting-edge facilities, and a collaborative culture, ensuring that every student receives the resources needed to thrive.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made With  <i class="fa-regular fa-heart"></i> by Techno University</p>
+    <p class="Copy">@CopyRight by Techno University</p>
+</section>
+<!-- ---------------------javacsript---------------- -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

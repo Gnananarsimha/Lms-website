@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/124b51a19b.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"> -->
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-regular fa-circle-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!-- ------------about us content----------- -->
+     <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest LMS Platform</h1>
+               <p>At Techno University, we proudly host the world's largest Learning Management System (LMS) platform, offering extensive resources, interactive courses, and seamless access for students globally. Our innovative technology enhances learning experiences, fostering engagement and collaboration across diverse academic disciplines and communities.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.png" >
+            </div>
+        </div>
+     </section>
+
+<!-- ------------footer------------ -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Techno University management is dedicated to fostering an inclusive and innovative academic environment. Committed to excellence, they prioritize student success through robust support services, cutting-edge facilities, and a collaborative culture, ensuring that every student receives the resources needed to thrive.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made With  <i class="fa-regular fa-heart"></i> by Techno University</p>
+    <p class="Copy">@CopyRight by Techno University</p>
+</section>
+<!-- ---------------------javacsript---------------- -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
